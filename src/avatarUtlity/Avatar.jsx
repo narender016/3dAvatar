@@ -6,7 +6,7 @@ import { AnimationMixer, LineBasicMaterial, LinearSRGBColorSpace, LoopOnce, Mesh
 import blinkData from "../modelsAndRelated/blendDataBlink.json";
 import createAnimation from "../modelsAndRelated/converter";
 import idleFbFile from "../modelsAndRelated/idle.fbx";
- import useVesimeGetJson from '../vesime/useVesimeGetJson';
+//  import useVesimeGetJson from '../vesime/useVesimeGetJson';
 
 import image_body from "../images/body.webp";
 import image_eyes from "../images/eyes.webp";
