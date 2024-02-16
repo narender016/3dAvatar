@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8a46fc3f.css",
+    "main.js": "/static/js/main.daa5165a.js",
+    "static/media/model.glb": "/static/media/model.86dfd0f2513c39581b67.glb",
+    "static/media/speed_sculpt_face_4_cartoon_girl.glb": "/static/media/speed_sculpt_face_4_cartoon_girl.e553b50112c13db49d8e.glb",
+    "static/media/idle.fbx": "/static/media/idle.d42e61b7fbc8844d6f02.fbx",
+    "index.html": "/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.8a46fc3f.css",
+    "static/js/main.daa5165a.js"
+  ]
+}
