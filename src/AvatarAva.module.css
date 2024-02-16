@@ -1,0 +1,199 @@
+
+.chatContainer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 35%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-left: 2%;
+}
+.chatMsgContainer {
+	height: calc(90% - 60px);
+	width: 100%;
+	overflow-y: scroll;
+}
+.chatMsgContainer::-webkit-scrollbar {
+	display: none;
+}
+
+.speakText {
+	width: 95%;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	border: 1px solid #fff;
+	border-radius: 50px;
+	filter: drop-shadow(0px 0px 1px black);
+	background: #3333331c;
+	backdrop-filter: blur(10px);
+	color: black;
+}
+.text {
+	width: 83%;
+	padding: 4px 7px;
+	background: transparent;
+	color: #fff;
+	border: none;
+	border-radius: 25px;
+	font-size: 1.1em;
+	height: 60%;
+	resize: none;
+}
+.text::-webkit-scrollbar {
+	display: none;
+}
+.actionIcons {
+	width: max-content;
+	display: flex;
+	justify-content: space-evenly;
+}
+.text:focus {
+	outline: none;
+}
+.text::placeholder {
+	color: #fff;
+	font-size: 1.1em;
+	line-height: 100%;
+}
+
+.chatElement {
+	width: 100%;
+	min-height: 95%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	gap: 10px;
+	padding: 2%;
+	list-style-type: none;
+}
+.chatElement li {
+	padding: 2%;
+	width: 100%;
+	background: #ffffffb8;
+	backdrop-filter: blur(10px);
+	width: max-content;
+	text-wrap: wrap;
+	max-width: 90%;
+	border-radius: 25px;
+	filter: drop-shadow(0px 0px 1px #161616);
+}
+.send {
+	align-self: end;
+	background: #161616 !important;
+	color: #fff !important;
+}
+.main .send{
+	background: #416155 !important;
+}
+.speakButton {
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	cursor: pointer;
+	box-shadow: 0 2px 2px gray;
+	margin: 3px;
+	border: None;
+}
+.speakButton:active {
+	transform: scale(0.9);
+}
+.speakButton svg {
+	height: 20px !important;
+}
+
+.loader1 {
+	display: inline-block;
+	font-size: 0px;
+	padding: 0px;
+	position: relative;
+	z-index: 4 !important;
+	width: 100%;
+	text-align: center;
+}
+.loader1 span {
+	vertical-align: middle;
+	border-radius: 100%;
+
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin: 3px 2px;
+	animation: loader1 0.8s linear infinite alternate;
+}
+.loader1 span:nth-child(1) {
+	animation-delay: -1s;
+	background: rgba(255, 255, 255, 0.6);
+}
+.loader1 span:nth-child(2) {
+	animation-delay: -0.8s;
+	background: rgba(255, 255, 255, 0.8);
+}
+.loader1 span:nth-child(3) {
+	animation-delay: -0.26666s;
+	background: rgba(255, 255, 255, 1);
+}
+.loader1 span:nth-child(4) {
+	animation-delay: -0.8s;
+	background: rgba(255, 255, 255, 0.8);
+}
+.loader1 span:nth-child(5) {
+	animation-delay: -1s;
+	background: rgba(255, 255, 255, 0.6);
+}
+
+@keyframes loader1 {
+	from {
+		transform: scale(0, 0);
+	}
+	to {
+		transform: scale(1, 1);
+	}
+}
+.htmlData tr,
+td {
+	border-left: 2px dotted #333;
+	text-align: center;
+}
+.main{
+	height: 100vh;
+	background: linear-gradient(to bottom, rgb(0 0 0 / 60%), rgb(16 16 16)), url(https://cutewallpaper.org/27/black-theme-with-white-border-wallpaper-desktop/1411612911.jpg);
+	/* background: linear-gradient(to bottom, rgba(22,22,22, 0.5), rgba(22,22,22, 1)), #416155; */
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.main canvas{
+	min-height: 350px !important;
+    max-height: 350px !important;
+    min-width: 350px !important;
+    max-width: 350px !important;
+	position: absolute;
+    left: 50%;
+    top: 2%;
+    transform: translate(-50%);
+	object-fit: cover;
+	border: 4px solid #fff;
+    border-radius: 50%;
+	filter: drop-shadow(rgb(255, 255, 255) 2px 4px 50px);
+}
+.main .chatContainer{
+	bottom: 2%;
+    left: 50%;
+    width: 40%;
+    height: calc(97% - 350px);
+    transform: translate(-50%);
+	margin: unset !important;
+	justify-content: unset !important;
+	top: unset !important;
+}
+.main .chatContainer .chatMsgContainer{
+	height: calc(100% - 60px) !important;
+}
+.main .chatContainer .speakText{
+	height: 60px !important;
+}

@@ -1,0 +1,89 @@
+.container{
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.header{
+    height: 10%;
+    background: #161616;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.avatarContainer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2%;
+    overflow: scroll;
+    height: 85%;
+    gap: 2%;
+}
+.avatarCard{
+    width: 32%;
+    height: max-content;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.imageConatiner{
+    width: 100%;
+    height: max-content;
+}
+.imageConatiner img{
+    /* height: 80%; */
+    width: 100%;
+    object-fit: contain;
+}
+.detailsOfAvatar{
+    padding: 1% 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.detailsOfAvatar h2{
+    width: 50%;
+}
+.buttonsContainer{
+    width: 55%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.navLinksView{
+    width: 47%;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    color: #000;
+    text-align: center;
+    padding: 2%;
+}
+.navLinksView:hover{
+    background: #161616;
+    color: #fff;
+}
+.navLinksView:active{
+    transform: scale(0.9);
+}
+.detailsOfAvatar > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8%;
+}
+
+.detailsOfAvatar > div > p{
+    font-size: small;
+    color: dodgerblue;
+    font-weight: bold;
+    margin-top: 3px;
+}
+
+@media screen and (max-width: 979px) {
+    .avatarCard {
+        width: 100% !important;
+    }
+
+}
